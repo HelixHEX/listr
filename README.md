@@ -1,5 +1,7 @@
 # Simple react native todo app with Appwrite backend
 
+- [screenshots](screenshots/screenshots.md)
+
 ## Getting Started
 
 ### Prerequisites
