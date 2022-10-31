@@ -1,7 +1,7 @@
 import { Client, Account, ID, Databases, Query } from "appwrite";
 import {
   APPWRITE_PROJECT_ID,
-  APPWRITE_HOSTNAME,
+  APPWRITE_ENDPOINT,
   APPWRITE_DATABASE,
   APPWRITE_LIST_COLLECTION_ID,
   APPWRITE_TASK_COLLECTION_ID,
@@ -13,7 +13,7 @@ class AppwriteService {
   account;
   database;
   constructor() {
-    appwrite.setEndpoint(APPWRITE_HOSTNAME).setProject(APPWRITE_PROJECT_ID);
+    appwrite.setEndpoint(APPWRITE_ENDPOINT).setProject(APPWRITE_PROJECT_ID);
     this.account = new Account(appwrite);
     this.database = new Databases(appwrite);
   }
